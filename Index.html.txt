@@ -1,3 +1,4 @@
 <html>
 <h1> This is Claire </h1>
+<p> This is my first web page. It's pretty simple right now. Maybe one day, it will look <b>COOL!</b></p>
 </html>
