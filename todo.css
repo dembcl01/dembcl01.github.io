@@ -9,3 +9,12 @@ li#Important {
 	Font-weight: bold;
 	font-family: Helvetica;
 }
+li#Medium {
+	background: Yellow;
+	Font-family: Helvetica;
+}
+
+li#Low {
+	background: green;
+	Font-family: Helvetica;
+}
