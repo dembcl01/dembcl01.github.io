@@ -3,6 +3,9 @@ h1, h2 {
 	font-family: Edwardian Script ITC;
 	color: darkblue;
 }
+h1 {
+	size: 60pt;
+	}
 
 li#Important {
 	Background: Red;
