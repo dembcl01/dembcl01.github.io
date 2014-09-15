@@ -3,3 +3,9 @@ h1, h2 {
 	font-family: Edwardian Script ITC;
 	color: darkblue;
 }
+
+p#Important {
+	Background: Red;
+	Font-weight: bold;
+	font-family: Helvetica;
+}
