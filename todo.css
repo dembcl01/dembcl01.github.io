@@ -4,7 +4,7 @@ h1, h2 {
 	color: darkblue;
 }
 h1 {
-	size: 60pt;
+	font-size: 60pt;
 	}
 
 li#Important {
