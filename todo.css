@@ -12,6 +12,12 @@ h2 {
 body {
 	background-color: #CC99FF;
 	}
+ul {
+	width: 300px;
+	padding: 25px;
+	border: 10px black;
+	margin: 25px;
+	}
 
 li#Important {
 	Background: Red;
