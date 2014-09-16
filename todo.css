@@ -6,6 +6,9 @@ h1, h2 {
 h1 {
 	font-size: 60pt;
 	}
+body {
+	background-color: #CC99FF;
+	}
 
 li#Important {
 	Background: Red;
@@ -13,7 +16,7 @@ li#Important {
 	font-family: Helvetica;
 }
 li#Medium {
-	background: FFFF33;
+	background: #FFFF33;
 	Font-family: Helvetica;
 }
 
