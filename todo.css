@@ -13,11 +13,11 @@ li#Important {
 	font-family: Helvetica;
 }
 li#Medium {
-	background: Yellow;
+	background: FFFF33;
 	Font-family: Helvetica;
 }
 
 li#Low {
-	background: green;
+	background: #00CED1;
 	Font-family: Helvetica;
 }
