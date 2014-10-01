@@ -42,7 +42,7 @@ section {
 	
 aside{
 	position: relative;
-	top:130px;
+	top:150px;
 	width:80%;
 	float: right;
 	height: 800px;
@@ -67,3 +67,17 @@ footer {
 	background-color: #EB99EB;
 	z-index: 10;
 	}
+	li#Important {
+	Background: Red;
+	Font-weight: bold;
+	font-family: Helvetica;
+}
+li#Medium {
+	background: #FFFF33;
+	Font-family: Helvetica;
+}
+
+li#Low {
+	background: #00CED1;
+	Font-family: Helvetica;
+}
