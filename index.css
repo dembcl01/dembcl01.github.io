@@ -2,6 +2,9 @@ h1 {
 	color: purple;
 	font-size: 60pt;
 	font-family: Edwardian Script ITC, Georgia, serif;
+	position:fixed;
+	top:-50px;
+	left:0px;
 	}
 body {
 	background-color: #ccffff;
@@ -13,6 +16,9 @@ nav {
     background-color: lightblue;
 	size: 100%;
 	position: fixed;
+	top:80px;
+	left:-5px;
+	width:100%;
 }
 nav li {
     display: inline;
@@ -26,7 +32,10 @@ aside {
 	position: fixed;
 	float: left;
 	background: lightblue;
-	]
+	left:-10px;
+	top:150px;
+	}
+
 a:hover{
     background-color: darkblue;
     color: pink;
