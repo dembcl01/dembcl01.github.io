@@ -37,8 +37,8 @@ aside {
 	}
 
 a:hover{
-    background-color: darkblue;
-    color: pink;
+    background-color: #B20047;
+    color: darkblue;
 }
 a:link {
     text-decoration: none;
