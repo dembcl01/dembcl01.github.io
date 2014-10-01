@@ -3,6 +3,34 @@ h1 {
 	font-size: 60pt;
 	font-family: Edwardian Script ITC, Georgia, serif;
 	}
-	body {
+body {
 	background-color: #ccffff;
 	}
+
+nav {
+    margin-top: 30px;
+    margin-bottom: 5px;
+    background-color: lightblue;
+	size: 100%;
+	position: fixed;
+}
+nav li {
+    display: inline;
+    padding: 10px;
+}
+aside {
+	margin-top: 5px;
+	margin-bottom: 5px;
+	margin-left: 10px;
+	margin-right: 10px;
+	position: fixed;
+	float: left;
+	background: lightblue;
+	]
+a:hover{
+    background-color: darkblue;
+    color: pink;
+}
+a:link {
+    text-decoration: none;
+}
