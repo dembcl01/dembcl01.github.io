@@ -1,0 +1,19 @@
+<html>
+<label for="xyz"> Red </label>
+       <input id="xyz" type="text" /><br>
+    <label for="a"> Green </label>
+       <input id="a" type="text"/><br>
+      <label for="b"> Blue </label>
+       <input id="b" type="text"/><br>
+       <button onclick="changecolor();">Change Color</button>
+       
+       <script type="text/jarascript">
+       changecolor = function() {
+       Red = document.querySelector('#xyz');
+       Green = document.querySelector('#a');
+       Blue = document.querySelector('#b');
+       newColor = "rgb(" + Red.value + ", " + Green.value + "," + Blue.value + ")"
+       document.body.style.backgroundColor = newColor
+       
+       }
+</html>
