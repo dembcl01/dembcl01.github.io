@@ -39,6 +39,7 @@ section {
 	height: 800px;
 	background-color: lightblue;
 	}
+
 	
 aside{
 	position: relative;
@@ -58,6 +59,7 @@ a:link {
     text-decoration: none;
 }
 
+	
 footer {
 	position: relative;
 	left:-5px;
