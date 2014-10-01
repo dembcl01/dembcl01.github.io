@@ -59,7 +59,8 @@ a:link {
 }
 
 footer {
-
+	position: fixed;
+	top:800px;
 	width: 100%;
 	clear: both;
 	background-color: #EB99EB;
