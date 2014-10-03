@@ -1,19 +1,26 @@
-<html>
-<label for="xyz"> Red </label>
-       <input id="xyz" type="text" /><br>
-    <label for="a"> Green </label>
-       <input id="a" type="text"/><br>
-      <label for="b"> Blue </label>
-       <input id="b" type="text"/><br>
-       <button onclick="changecolor();">Change Color</button>
-       
-       <script type="text/jarascript">
-       changecolor = function() {
-       Red = document.querySelector('#xyz');
-       Green = document.querySelector('#a');
-       Blue = document.querySelector('#b');
-       newColor = "rgb(" + Red.value + ", " + Green.value + "," + Blue.value + ")"
-       document.body.style.backgroundColor = newColor
-       
+ <html>
+   <head>
+     <title>Colors</title>
+   </head>
+   <body>
+     <script src="color.js" type="text/javascript"></script>
+     <label for="redi">Red:</label>
+     <input type="text" id="redi" min="0" value="255" /> <br>
+     <label for="greeni">Green:</label>
+     <input type="text" id="greeni"  value="255" /><br>
+     <label for="bluei">Blue:</label>
+     <input type="text" id="bluei" value="255" />
+     <br>
+     <button onclick="changeColor();">Change Color</button>
+
+     <script>
+       changeColor = function() {
+           red = document.querySelector('#redi').value;
+           green = document.querySelector('#greeni').value;
+           blue = document.querySelector('#bluei').value;
+           colorStr = "rgb("+red+","+green+","+blue+")";
+           document.body.style.backgroundColor = colorStr;
        }
-</html>
+     </script>
+   </body>
+ </html>
