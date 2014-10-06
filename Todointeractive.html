@@ -1,4 +1,10 @@
 <html>
+	<style>
+		li {
+		list-style:none;
+		}
+		
+		</style>
 	<body>
 		<h1>To Do </h1>
 		<main>
@@ -7,22 +13,24 @@
 		</main>
 		<aside>
 			<label for="taskbox"> New Task </label>
-			<input type="text" for="taskbox"/> <button onclick="Add ()">Add Task</button>
+			<input type="text" id="taskbox"/> <button onclick="Add ()">Add Task</button>
 		</aside>
 	</body>
-	
-			<input type="checkbox">
 		
-	
-	
 	<script type="text/javascript">
 		Add = function () {
 			i = document.querySelector("#taskbox") 
 			bl = document.querySelector("#busylist")
 			li = document.createElement("li")
-			li.innerHTML = i.value
+			cb = document.createElement("input")
+			cb.type = "checkbox"
+			t = document.createTextNode(i.value)
+			
 			bl.appendChild(li)
+			bl.appendChild(cb)
+			bl.appendChild(t)
+		
 	
 		}
 	</script>
-</html>
+</html> li.innerHTML = "<input type=checkbox>" + i.value
