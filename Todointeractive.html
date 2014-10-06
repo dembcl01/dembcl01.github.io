@@ -1,14 +1,28 @@
 <html>
-	<header> To Do</header>
-	<section>
-		<ul>
+	<body>
+		<h1>To Do </h1>
+		<main>
+			<ul id="busylist"> 
+			</ul>
+		</main>
+		<aside>
+			<label for="taskbox"> New Task </label>
+			<input type="text" for="taskbox"/> <button onclick="Add ()">Add Task</button>
+		</aside>
+	</body>
+	
 			<input type="checkbox">
-		</ul>
-	</section>
-	<input type="text"> <button onclick="Add ()">Add</button>
+		
+	
+	
 	<script type="text/javascript">
 		Add = function () {
-		document.body.innerHTML
+			i = document.querySelector("#taskbox") 
+			bl = document.querySelector("#busylist")
+			li = document.createElement("li")
+			li.innerHTML = i.value
+			bl.appendChild(li)
+	
 		}
 	</script>
 </html>
