@@ -1,9 +1,5 @@
 <html>
-	<style>
-		li {
-		list-style:none;
-		}
-		
+ <link rel="stylesheet" href="todo.css" type="text/css">
 		</style>
 	<body>
 		<h1>To Do </h1>
@@ -13,7 +9,13 @@
 		</main>
 		<aside>
 			<label for="taskbox"> New Task </label>
-			<input type="text" id="taskbox"/> <button onclick="Add ()">Add Task</button>
+			<input type="text" id="taskbox"/> 
+			<select id="priority">
+				<option value= "high">High</option>
+				<option value= "medium">Medium</option>
+				<Option value= "low">Low</option>
+			</select>
+			<button onclick="Add ()">Add Task</button>
 		</aside>
 	</body>
 		

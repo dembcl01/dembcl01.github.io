@@ -13,6 +13,7 @@ body {
 	background-color: #CC99FF;
 	}
 ul {
+	list-style:none;
 	width: 400px;
 	padding: px;
 	margin: 2px;
