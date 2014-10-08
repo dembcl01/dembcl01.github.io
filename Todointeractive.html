@@ -11,28 +11,40 @@
 			<label for="taskbox"> New Task </label>
 			<input type="text" id="taskbox"/> 
 			<select id="priority">
-				<option value= "important">High</option>
-				<option value= "medium">Medium</option>
-				<Option value= "low">Low</option>
+				<option class = "high">High</option>
+				<option class = "medium">Medium</option>
+				<option class = "low">Low</option>
 			</select>
 			<button onclick="Add ()">Add Task</button>
 		</aside>
 	</body>
 		
 	<script type="text/javascript">
+		doneTask = function () {
+			this.parentNode.className= "done"
+			}
+		
+	
 		Add = function () {
-			i = document.querySelector("#taskbox") 
-			bl = document.querySelector("#busylist")
-			li = document.createElement("li")
-			cb = document.createElement("input")
-			cb.type = "checkbox"
-			t = document.createTextNode(i.value)
-			li.appendChild(cb)
-			li.appendChild(t)
-			bl.appendChild(li)
+			i = document.querySelector("#taskbox"); 
+			bl = document.querySelector("#busylist");
+			priority = document.querySelector('#priority').value;
+			li = document.createElement("li");
+			cb = document.createElement("input");
+			cb.type = "checkbox";
+			t = document.createTextNode(i.value);
+			li.className = priority;
+			li.appendChild(cb);
+			li.appendChild(t);
+			bl.appendChild(li);
+			cb.onclick = doneTask;
+			
+			
+			//Other way to do checkbox:: li.innerHTML = "<input type=checkbox>" + i.value
+	
 			
 		
 	
 		}
 	</script>
-</html> li.innerHTML = "<input type=checkbox>" + i.value
+</html> 

@@ -9,6 +9,7 @@ h1 {
 h2 {
 	Font-size: 35pt;
 	}
+
 body {
 	background-color: #CC99FF;
 	}
@@ -19,20 +20,23 @@ ul {
 	margin: 2px;
 	}
 
-li#Important {
+.high {
 	Background: Red;
 	Font-weight: bold;
 	font-family: Helvetica;
 }
-li#Medium {
+.medium {
 	background: #FFFF33;
 	Font-family: Helvetica;
 }
 
-li#Low {
+.low {
 	background: #00CED1;
 	Font-family: Helvetica;
 }
 p {
 	font-family: Helvetica;
+	}
+.done {
+	text-decoration: line-through;
 	}
