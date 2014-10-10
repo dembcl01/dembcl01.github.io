@@ -21,11 +21,21 @@
 		
 	<script type="text/javascript">
 		doneTask = function () {
+			if (this.checked) {
 			this.parentNode.className= "done"
-			
+			} else {
+				this.parentNode.className= ""
+				}
 			}
 		
-	
+		save = function () {
+			newList=[]
+     		theList = document.querySelectorAll('li')
+      		for(i=0; i< theList.length; i++) {
+        	alert(theList[i].innerText)
+        	newList.push(theList[i].innerText)
+        	}
+		}
 		Add = function () {
 			i = document.querySelector("#taskbox"); 
 			bl = document.querySelector("#busylist");
