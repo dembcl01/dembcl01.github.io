@@ -22,9 +22,9 @@
 	<script type="text/javascript">
 		doneTask = function () {
 			if (this.checked) {
-			this.parentNode.className= "done"
+			this.parentNode.classList.add("done");
 			} else {
-				this.parentNode.className= ""
+				this.parentNode.classList.remove("done");
 				}
 			}
 		
