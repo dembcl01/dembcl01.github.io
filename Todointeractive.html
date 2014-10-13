@@ -26,15 +26,21 @@
 			} else {
 				this.parentNode.classList.remove("done");
 				}
+				localSave()
 			}
 		
-		save = function () {
-			newList=[]
-     		theList = document.querySelectorAll('li')
-      		for(i=0; i< theList.length; i++) {
-        	alert(theList[i].innerText)
+		localSave = function () {
+			res = []
+			var i;
+     		allEntries = document.querySelectorAll('li')
+      		for(i=0; i< allEntries.length; i++) {
+        	if (allEntries[i].className != "done" ) {
+        		res.push(allEntries[i].innerText);
         	newList.push(theList[i].innerText)
         	}
+		}
+		console.log(res)
+		localStorage.setItem("todoDatabase", JSON.stringify(res))
 		}
 		Add = function () {
 			i = document.querySelector("#taskbox"); 
@@ -49,14 +55,9 @@
 			li.appendChild(t);
 			bl.appendChild(li);
 			cb.onclick = doneTask;
-			
-			
+			localSave();
 			
 			//Other way to do checkbox:: li.innerHTML = "<input type=checkbox>" + i.value
-	
-			
-		
-	
 		}
 	</script>
 </html> 
