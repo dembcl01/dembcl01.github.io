@@ -42,7 +42,7 @@
 		}
 		localStorage.setItem("todoDatabase", JSON.stringify(res))
 	}
-	
+	 
 	restoreTasks = function () {
 		allTasks = JSON.parse(localStorage.getItem("todoDatabase"))
 		taskList = document.querySelector("#busylist");
