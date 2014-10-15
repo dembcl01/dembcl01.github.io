@@ -41,28 +41,23 @@
 		}
 		restoreList = function () {
 		allEntries = JSON.parse(localStorage.getItem("todoDatabase"));
-		for (i=0; i<allEntries.length; itt) {
-		c = document.createTextNode(allEntries[i].value);
-		c.appendChild(li);
-			i = document.querySelector("#taskbox"); 
-			bl = document.querySelector("#busylist");
-			priority = document.querySelector('#priority').value;
-			li = document.createElement("li");
-			cb = document.createElement("input");
-			cb.type = "checkbox";
-			t = document.createTextNode(i.value);
-			li.className = priority;
-			li.appendChild(cb);
-			li.appendChild(t);
-			bl.appendChild(li);
-			cb.onclick = doneTask;
-			localSave();
-		//add li to pg using allEntries[i] as the text of the task//
-		//consider adding in a function to be 3 dif lists to preserve priorities, do after getting li to restore//
+		for (i=0; i<allEntries.length; i++) {
+			if (! allEntries[i].classList.contains("done")) {
+				res.push(allEntries[i].innerText);
+				}
 			}
+			localStorage.setItem('todoDatabase",JSON.stringify(res))
 		}
-		console.log(res)
-		localStorage.setItem("todoDatabase", JSON.stringify(res))
+		//restoreTasks= function() {
+			//allTasks = JSON.parse(localStorage.getItem('todoDatabase'))
+			//taskList = document.querySelector("#busylist');
+			//for(i = 0; i < allTaskslength; i++) {
+			//if (! allEntries[i].classList.contains("")) {
+				//res.push(allEntries[i].innerText);
+				//}
+			//}
+	
+		
 		}
 		Add = function () {
 			i = document.querySelector("#taskbox"); 
