@@ -44,15 +44,16 @@
 	}
 	
 	restoreList = function () {
-		var res= localSave ()
-		todoDatabase = localSave
+		var res = []
+		
+		
 		allTasks = JSON.parse(localStorage.getItem("todoDatabase"))
 		allEntries = document.querySelectorAll('li')
 		taskList = document.querySelector("#busylist");
 		for (i=0; i<allTasks.length; i++) {
 		
 			}
-			localStorage.restoreList("todoDatabase",JSON.stringify(res))
+			localSave.restoreList("todoDatabase",JSON.stringify(res))
 		}
 		
 		add = function () {
