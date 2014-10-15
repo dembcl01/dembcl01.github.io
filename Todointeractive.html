@@ -15,11 +15,12 @@
 				<option class = "medium">Medium</option>
 				<option class = "low">Low</option>
 			</select>
-			<button onclick="add()">Add Task</button>
+			<button onclick = "add()">Add Task</button>
 		</aside>
 	</body>
 		
 	<script type="text/javascript">
+	var taskCount = 10;
 	doneTask = function () {
 			if (this.checked) {
 				this.parentNode.classList.add("done");
@@ -43,19 +44,17 @@
 	}
 	
 	restoreList = function () {
+		var res= localSave ()
+		todoDatabase = localSave
 		allTasks = JSON.parse(localStorage.getItem("todoDatabase"))
+		allEntries = document.querySelectorAll('li')
 		taskList = document.querySelector("#busylist");
 		for (i=0; i<allTasks.length; i++) {
-			if (! allEntries[i].classList.contains("done")) {
-				res.push(allEntries[i].innerText);
-				}
+		
 			}
 			localStorage.restoreList("todoDatabase",JSON.stringify(res))
 		}
 		
-	
-		
-		}
 		add = function () {
 			var newli;
 			task = document.querySelector("#taskbox"); 
@@ -64,7 +63,7 @@
 			taskText = task.value;
 			
 			newli = document.createElement("li");
-			newli.className = priorityvalue;
+			newli.className = priorityValue;
 			cb = document.createElement("input");
 			cb.type = "checkbox";
 			cb.onclick = doneTask;
@@ -77,6 +76,6 @@
 	
 			//Other way to do checkbox:: li.innerHTML = "<input type=checkbox>" + i.value
 		}	
-	window.onload = restoreTasks;	
+	window.onload = restoreList;	
 	</script>
 </html> 
